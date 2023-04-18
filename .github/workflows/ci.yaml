@@ -25,8 +25,8 @@ jobs:
     needs: test_lint
     strategy:
       matrix:
-        node: [ '16', '17' ]
-        os: [ windows-latest, ubuntu-latest ]
+        node: [ '16', '18' ]
+        os: [ ubuntu-latest ]
     name: Test with Node v${{ matrix.node }} on ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
